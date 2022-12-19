@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /*outline: 2px solid teal;*/
+    @include mobile {
+        max-width: 480px;
+    }
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
+}
+.no-scroll {
+    overflow: hidden;
+}

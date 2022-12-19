@@ -1,0 +1,23 @@
+.logo {
+    text-decoration: none;
+    font-family: Raleway;
+    @include font(700, 24px, 1.17, 0.03em);
+    color: #000000;
+    @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    }
+}
+
+.logo--inverse {
+    text-decoration: none;
+    font-family: Raleway;
+    @include font(700, 24px, 1.17, 0.03em);
+    color: var(--primary-white-color);
+    @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    }
+}
+
+.logo__web {
+    color: var(--accent-color);
+}

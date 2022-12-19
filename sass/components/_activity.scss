@@ -1,0 +1,48 @@
+.activity {
+    padding-top: 0px;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.activity-title {
+    @include font(700, 36px, 1.17, 0.03em);
+    text-align: Center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.activity-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.activity-list .item {
+    width: calc((100% - 60px) / 3);
+}
+
+.activity-cards {
+    position: relative;
+    &::before {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 70px;
+            background-color: rgba(47, 48, 58, 0.8);
+        }
+}
+
+.activity-text {
+    display: flex;
+    position: absolute;
+    bottom: 27px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    @include font(700, 14px, 1.14, 0.03em);
+    color: var(--primary-white-color);
+}
