@@ -1,11 +1,32 @@
 .hero {
     background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-image: var(--gradient),
+    url(../images/background_mob@1x.jpg);
     background-repeat: no-repeat;
     text-align: Center;
     max-width: 1600px;
     margin: 0 auto;
     padding: 118px 0px;
+    @include retina {
+        background-image: var(--gradient), 
+        url(../images/background_mob@2x.jpg);
+        }
+    @include mobile {
+        background-image: var(--gradient),
+        url(../images/background_tab@1x.jpg);
+        @include retina {
+        background-image: var(--gradient),
+        url(../images/background_tab@2x.jpg);
+                        }
+    }
+    @include tablet {
+    background-image: var(--gradient),
+    url(../images/background_des@1x.jpg);
+    @include retina {
+        background-image: var(--gradient),
+        url(../images/background_des@2x.jpg);
+    }
+}
     @include desktop {
     padding: 200px 0px;
     }

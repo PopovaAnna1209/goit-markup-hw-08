@@ -188,7 +188,7 @@
                     <ul class="activity-list">
                         <li class="item"> 
                             <div class="activity-cards">
-                                <img src="./images/img1.jpg" alt="Комп" width="370">
+                                <img srcset="./images/img1@1x.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="Комп" width="370">
                                <div class="activity-text"> 
                                 <p class="text">ДЕСКТОПНІ ДОДАТКИ</p>
                                </div>
@@ -196,7 +196,7 @@
                         </li>
                         <li class="item"> 
                         <div class="activity-cards">
-                                <img src="./images/img2.jpg" alt="Телефон" width="370">
+                                <img srcset="./images/img2@1x.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="Телефон" width="370">
                                 <div class="activity-text">
                                     <p class="text">МОБІЛЬНІ ДОДАТКИ</p>
                                 </div>
@@ -204,7 +204,7 @@
                         </li>
                         <li class="item"> 
                         <div class="activity-cards">
-                                <img src="./images/img3.jpg" alt="Планшет" width="370">
+                                <img srcset="./images/img3@1x.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg" alt="Планшет" width="370">
                                 <div class="activity-text">
                                     <p class="text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                                 </div>
@@ -219,8 +219,14 @@
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
-                    <li class="item"> <img src="./images/product_designer.jpg" alt="Ігор" width="270">
-                        <div class="description">
+                    <li class="item">
+                        <picture>
+                            <source srcset="./images/Designer_des@1x.jpg 1x, ./images/Designer_des@2x.jpg 2x, ./images/Designer_des@3x.jpg 3x" media="(min-width: 1200px)"/>
+                            <source srcset="./images/Designer_tab@1x.jpg 1x, ./images/Designer_tab@2x.jpg 2x" media="(min-width: 768px)"/>
+                            <source srcset="./images/Designer_mob@1x.jpg 1x, ./images/Designer_mob@2x.jpg 2x" media="(max-width: 767px)"/>
+                            <img src="./images/Designer_mob@1x.jpg" alt="Ігор" width="450">
+                        </picture>
+                           <div class="description">
                             <h3 class="team-title-list">Ігор Дем'яненко</h3>
                             <p lang="en" class="team-text">Product Designer</p>
                                      
@@ -260,8 +266,15 @@
                             </ul>
                      </div>
                     </li>
-                    <li class="item"> <img src="./images/frontend_developer.jpg" alt="Ольга" width="270">
-                        <div class="description">
+                    <li class="item"> 
+                        <picture>
+                            <source srcset="./images/FrontendDeveloper_des@1x.jpg 1x, ./images/FrontendDeveloper_des@2x.jpg 2x, ./images/FrontendDeveloper_des@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/FrontendDeveloper_tab@1x.jpg 1x, ./images/FrontendDeveloper_tab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/FrontendDeveloper_mob@1x.jpg 1x, ./images/FrontendDeveloper_mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/FrontendDeveloper_mob@1x.jpg" alt="Ольга" width="450">
+                        </picture>
+                         <div class="description">
                             <h3 class="team-title-list">Ольга Рєпіна</h3>
                             <p lang="en" class="team-text">Frontend Developer</p>
                             <ul class="team-soc-list">
@@ -300,8 +313,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="item"> <img src="./images/marketing.jpg" alt="Микола" width="270">
-                        <div class="description">
+                    <li class="item"> 
+                        <picture>
+                            <source srcset="./images/Marketing_des@1x.jpg 1x, ./images/Marketing_des@2x.jpg 2x, ./images/Marketing_des@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/Marketing_tab@1x.jpg 1x, ./images/Marketing_tab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/Marketing_mob@1x.jpg 1x, ./images/Marketing_mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/Marketing_mob@1x.jpg" alt="Микола" width="450">
+                        </picture>
+                         <div class="description">
                             <h3 class="team-title-list">Микола Тарасов</h3>
                             <p lang="en" class="team-text">Marketing</p>
                             <ul class="team-soc-list">
@@ -340,7 +360,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="item"> <img src="./images/ui_designer.jpg" alt="Михайло" width="270">
+                    <li class="item"> 
+                        <picture>
+                            <source srcset="./images/UIDesigner_des@1x.jpg 1x, ./images/UIDesigner_des@2x.jpg 2x, ./images/UIDesigner_des@3x.jpg 3x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/UIDesigner_tab@1x.jpg 1x, ./images/UIDesigner_tab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/UIDesigner_mob@1x.jpg 1x, ./images/UIDesigner_mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/UIDesigner_mob@1x.jpg" alt="Михайло" width="450">
+                        </picture>                        
                         <div class="description">
                             <h3 class="team-title-list">Михайло Єрмаков</h3>
                             <p lang="en" class="team-text">UI Designer</p>
