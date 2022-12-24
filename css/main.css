@@ -740,6 +740,8 @@ body {
   background-color: #C4C4C4;
   background-image: var(--gradient), url(../images/background_mob@1x.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: Center;
   max-width: 1600px;
   margin: 0 auto;
